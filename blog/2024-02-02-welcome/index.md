@@ -10,4 +10,4 @@ Jediné co nevyšlo úplně podle našich představ bylo, že jsme chtěli Eli s
 
 
 ![Docusaurus Plushie](./elen.webp)
-
+<!-- truncate -->

@@ -1,19 +1,8 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+Elen:
+  description: "Články související s Elen"
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+Pravěk 2024:
+  description: "Témata a události spojené s Pravěkem 2024"
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+Vyskeř:
+  description: "Obsah zaměřený na místo a akce ve Vyskeři"

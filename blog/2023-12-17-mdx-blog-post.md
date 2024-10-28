@@ -8,3 +8,4 @@ Eli touží po elektrickém handbiku! :-) Tady to opět vesmír zařídil, jak n
 
 https://www.cernikone.cz/   
 https://koloproadama.cz/
+<!-- truncate -->

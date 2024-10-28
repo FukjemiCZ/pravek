@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
-import styles from './Sponsors.module.css';
+import styles from './sponsors.module.css';
 import sponsors from '../data/sponsors'; // Import sponzorů
 
 function Sponsors() {

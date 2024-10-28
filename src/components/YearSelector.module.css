@@ -1,0 +1,50 @@
+/* src/components/YearSelector.module.css */
+
+.yearRadios {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .yearRadioLabel {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .yearRadio {
+    margin-right: 5px;
+  }
+  
+  /* Styly pro různé roky */
+  .year-2020 {
+    background-color: #ff6666; /* Červená pro rok 2020 */
+  }
+  
+  .year-2021 {
+    background-color: #66b3ff; /* Modrá pro rok 2021 */
+  }
+  
+  .year-2022 {
+    background-color: #66ff66; /* Zelená pro rok 2022 */
+  }
+  
+  .year-2023 {
+    background-color: #ffcc66; /* Žlutá pro rok 2023 */
+  }
+  
+  /* Hover efekt */
+  .yearRadioLabel:hover {
+    opacity: 0.8;
+  }
+  
+  /* Pokud je radio button zaškrtnutý, zvýrazníme ho */
+  .yearRadio:checked + label {
+    border: 2px solid white;
+  }
+  

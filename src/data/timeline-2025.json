@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "title": "Prezentace",
+      "date": "Čtvrtek 16.5.2024",
+      "time": "17:00 - 20:30",
+      "description": "Při prezenci bude kontrolován očkovací průkaz psů, kde bude požadováno platné očkování proti vzteklině. Podrobnou mapu trasy obdržíte při prezenci."
+    },
+    {
+      "title": "Informační meeting",
+      "date": "Čtvrtek 16.5.2024",
+      "time": "21:00",
+      "description": "Doporučujeme se zúčastnit informačního meetingu, kde se dozvíte, kde bude možné trasu zkrátit a jak budou probíhat kontroly."
+    },
+    {
+      "title": "Starty",
+      "date": "Pátek 17.5.2024",
+      "time": "od 7:00",
+      "description": "Čas se neměří, ale do cíle musíte dojít do neděle 19.5.2024 do 10:00. Čas startu i cíle je nutné nahlásit pořadateli."
+    },
+    {
+      "title": "Ukončení akce",
+      "date": "Neděle 19.5.2024",
+      "time": "v 11:00",
+      "description": "Místo vyhlašování výsledků proběhne tombola."
+    }
+  ]
+}

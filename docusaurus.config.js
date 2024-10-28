@@ -102,7 +102,7 @@ const config = {
         },
         items: [
           { to: '/blog', label: 'Novinky', position: 'left' },
-          { to: '/profile', label: 'Komu pomáhame?', position: 'left' },
+          { to: '/blog', label: 'Komu pomáhame?', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',

@@ -3,25 +3,24 @@
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Pravěk v ráji',
   tagline: 'Benefiční dogtrekking',
   favicon: 'img/favicon.ico',
-
+  
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://pravek-v-raji.cz/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'fukjemiCZ', // Usually your GitHub org/user name.
+  projectName: 'pravek', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -36,14 +35,27 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      /** @type {import('@docusaurus/preset-classic').Options} */ 
       ({
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/fukjemiCZ/pravek/tree/main/packages/create-docusaurus/templates/shared/',
+          lastVersion: 'current',
+          versions: {
+            'current': {
+              label: '2025',
+              path: '2025',
+            },
+            '2024': {
+              label: '2024',
+              path: '2024',
+              banner: 'unmaintained',
+
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +66,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/fukjemiCZ/pracek/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -64,6 +76,17 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'profile',
+        routeBasePath: 'profile',
+        path: './profile',
+        sidebarPath: require.resolve('./sidebarsProfile.js'), 
+      },
     ],
   ],
   themeConfig:
@@ -78,8 +101,8 @@ const config = {
           src: 'img/ruffianslegend-logo.webp',
         },
         items: [
-          {to: '/blog', label: 'Novinky', position: 'left'},
-          {to: '/profiles', label: 'Komu pomáhame?', position: 'left'},
+          { to: '/blog', label: 'Novinky', position: 'left' },
+          { to: '/profile', label: 'Komu pomáhame?', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -87,11 +110,15 @@ const config = {
             label: 'Propozice',
             to: '2025',
           },
-          {to: '/blog', label: 'Pár obrázků z trasy', position: 'left'},
-          {to: '/sponsors', label: 'Sponzoři akce', position: 'left'},
-          {to: '/blog', label: 'Přihlášení', position: 'left'},
-          {to: '/blog', label: 'Kontakt', position: 'left'},
-          
+          { to: '/blog', label: 'Pár obrázků z trasy', position: 'left' },
+          { to: '/sponsors', label: 'Sponzoři akce', position: 'left' },
+          { to: '/blog', label: 'Přihlášení', position: 'left' },
+          { to: '/blog', label: 'Kontakt', position: 'left' },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownActiveClassDisabled: true,
+          },
         ],
       },
       footer: {

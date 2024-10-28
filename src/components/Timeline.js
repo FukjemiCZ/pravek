@@ -1,20 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import programData from '../data/timeline-2025.json'; // Import JSON dat
-
 import './Timeline.module.css';
 
-function Timeline() {
+function Timeline({ filename }) {
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Načítání dat z importovaného JSON
-    setEvents(programData.events);
-  }, []);
+    async function fetchData() {
+      try {
+        // Dynamický import JSON souboru ze složky src/data/
+        const programData = await import(`../data/${filename}`);
+        setEvents(programData.events || []);
+      } catch (error) {
+        console.error("Error loading data:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchData();
+  }, [filename]);
 
   return (
     <div className="timeline">
-      {events.length === 0 ? (
-        <div>Loading program...</div> // Zobrazíme, pokud nejsou data
+      {loading ? (
+        <div>Loading program...</div>
+      ) : events.length === 0 ? (
+        <div>No events found.</div>
       ) : (
         events.map((event, index) => (
           <div className="timeline-item" key={index}>

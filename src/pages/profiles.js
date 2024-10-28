@@ -6,7 +6,7 @@ const profiles = [
   {
     name: 'Jan Novák',
     amount: '10 000 Kč',
-    message: 'Ahoj, jsem Jan a miluji programování. Jsem nadšený z nových technologií a rád se učím.',
+    message: 'Jmenuji se Elena Košková. Je mi 18 let a studuji Sociální činnost. Miluju cestování, sport, pomáhání druhým lidem, boření stereotypů a překonávání svých hranic. <br> Už odmalička svůj život sdílím se svalovou dystrofií. Často je to boj, ale stojí za to! <br> Čím jsem starší, tak se můj zdravotní stav zhoršuje, vyžaduje neustále větší množství terapií a operací. Existuje spousta kompenzačních pomůcek nebo rehabilitací, které mi pomáhají udržovat zdravotní stav, či by pomohly žít aktivnější život, ale pojišťovna je často nehradí a já si je finančně nemohu dovolit. <br>Kromě rehabilitací, pomáhá pohyb jako takový, proto se snažím sportovat, a tak bych si moc ráda pořídila elektrický handbike, který i se svým omezením dokážu dobře ovládat. < br>Abych se mohla pohybovat venku s kamarády, nezávisle na pomoci někoho jiného, mě teď čeká pořízení přídavného pohonu k vozíku. Což se pojí k mému cíli: žít život naplno a být co nejvíc samostatná. <br>Chtěla bych všem moc poděkovat za jakoukoliv podporu. Ohromně si jí vážím. A doufám, že se chopím příležitosti a podaří se mi pomoct zase někomu jinému. ',
     photo: '/profiles/Elen_profile.webp', // Vložte URL k fotografii
   },
   {
